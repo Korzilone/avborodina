@@ -83,11 +83,11 @@ function onClickEdit(): void {
   router.push({ name: "home" });
 }
 
-function input(value: string) {
+function input(value: string): void {
   inputValue.value = value;
 }
 
-function checkbox(value: boolean) {
+function checkbox(value: boolean): void {
   checkBoxValue.value = value;
 }
 </script>

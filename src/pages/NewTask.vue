@@ -63,20 +63,16 @@ let inputValue: Ref<string> = ref("");
 let checkBoxValue: Ref<boolean> = ref(false);
 
 function onClick(): void {
-  console.log(checkBoxValue.value, "dd");
   taskStore.addNewTask(inputValue.value, checkBoxValue.value);
   router.push({ name: "home" });
 }
 
-function input(value: string) {
+function input(value: string): void {
   inputValue.value = value;
 }
 
-function checkbox(value: boolean) {
-  console.log(123, value);
-  console.log(checkBoxValue.value, "v1");
+function checkbox(value: boolean): void {
   checkBoxValue.value = value;
-  console.log(checkBoxValue.value, "v2");
 }
 </script>
 
